@@ -1,0 +1,150 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#fff;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* CONTENEDOR */
+
+.container{
+  display:flex;
+  align-items:center;
+  gap:120px;
+}
+
+/* IZQUIERDA */
+
+.left{
+  width:520px;
+}
+
+.phones{
+  width:420px;
+  margin-bottom:30px;
+}
+
+.left h1{
+  font-size:42px;
+  font-weight:300;
+  line-height:1.2;
+}
+
+.left span{
+  background: linear-gradient(45deg,#ff8500,#ff00a6);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  font-weight:600;
+}
+
+/* DERECHA */
+
+.right{
+  width:360px;
+}
+
+.login-box{
+  border:1px solid #dbdbdb;
+  padding:40px 30px;
+  border-radius:12px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  background:white;
+}
+
+.logo{
+  width:180px;
+  margin:0 auto 20px;
+}
+
+/* INPUTS */
+
+input{
+  background:#fafafa;
+  border:1px solid #dbdbdb;
+  padding:14px;
+  border-radius:8px;
+  font-size:14px;
+}
+
+input:focus{
+  outline:none;
+  border:1px solid #a8a8a8;
+  background:white;
+}
+
+/* BOTÓN LOGIN */
+
+button{
+  padding:14px;
+  border:none;
+  border-radius:10px;
+  background:#0095f6;
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+  font-size:14px;
+}
+
+button:hover{
+  background:#1877f2;
+}
+
+/* LINKS */
+
+.forgot{
+  text-align:center;
+  font-size:13px;
+  color:#00376b;
+  margin-top:5px;
+  cursor:pointer;
+}
+
+.divider{
+  text-align:center;
+  color:#8e8e8e;
+  margin:10px 0;
+  font-size:13px;
+}
+
+.fb{
+  background:transparent;
+  color:#385185;
+  font-weight:bold;
+}
+
+.register{
+  background:transparent;
+  border:1px solid #0095f6;
+  color:#0095f6;
+}
+
+.meta{
+  text-align:center;
+  margin-top:20px;
+  font-size:12px;
+  color:#8e8e8e;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  .left{
+    display:none;
+  }
+
+  .container{
+    justify-content:center;
+  }
+
+}
